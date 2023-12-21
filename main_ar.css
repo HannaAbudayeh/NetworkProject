@@ -1,0 +1,138 @@
+html{
+    direction: rtl;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+    will-change:scroll-position;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.498);
+}
+
+.header {
+    background-image: url('./Fordesc.jpg');
+    background-size: 2800px;
+    background-attachment:scroll;
+    background-position: 0px 0px;
+    margin: -10px -8px;
+    width: auto;
+}
+
+
+.navBar {
+    background-color:rgba(245, 245, 245, 0.934);
+    margin: -10px -5px;
+    z-index: 2;
+    max-height: 90px;
+    width: inherit;
+    overflow: auto;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.home {
+    text-transform: capitalize;
+    margin-right: 100px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.1s;
+}
+
+.about {
+    text-transform: capitalize;
+    margin-right: 60px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.1s;
+}
+
+.home:hover,
+.about:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.bzu {
+    padding: 15px 15px;
+    margin: 4px 0 0 0;
+}
+
+.desc {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 800;
+    width: fit-content;
+    min-width: 600px;
+    margin: 30px 80px 0px 60px;
+    background-color: rgba(212, 212, 212, 0.788);
+    border-color: white;
+    border-width: 2px;
+    border-style: none double;
+    border-radius: 10px;
+    cursor: default;
+    /*To define the delay of transition for properties*/
+    transition: background-color 0.5s, width 0.5s, font-size 0.5s;
+
+}
+
+.welcome {
+    text-align: right;
+    margin-right: 22px;
+}
+
+.CourseName {
+    color: blue;
+    margin-right: 5px;
+}
+
+.desc:hover {
+    background-color: rgb(212, 212, 212);
+    
+   /*font-size: 70px;*/ 
+}
+
+.eyas,
+.maan,
+.yaqeen {
+    color: black;
+    font-size: larger;
+}
+
+.Names {
+    line-height: 50px;
+    cursor: default;
+    background-color: rgb(212, 212, 212);
+    width: 65%;
+    overflow: auto;
+    border-width: 5px;
+    border-color: rgba(175, 6, 6, 0.473);
+    border-style: double none double none;
+    border-radius: 15px;
+    border-radius: 100px 15px ;
+    margin: 15px 0 0 30px;
+}
+
+.group{
+    color: blue;
+    font-size: xx-large;
+    margin: 25px;
+}
