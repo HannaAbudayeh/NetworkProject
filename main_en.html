@@ -5,31 +5,26 @@
 <meta charset="UTF-8"/>
 <!--To make a proper mobile view-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main_en.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="login.css">
 <title>ENCS3320 My Tiny WebServer</title>
 </head>
 <body>
 <div class="header">
-    <div class="navBar">
-        <ul>
-            <li><img class="bzu" src="./bzu.png" alt="BZUlogo" width="110px"></li>
-            <li><a class="home" href="main_ar.html" title="link to arabic page" target="_blank">Arabic</a></li>
-            <li><a class="about" href="#Box" title="link to about us section">About Us</a></li>
-            <li><a class="strings" href="https://www.w3schools.com/python/gloss_python_multi_line_strings.asp" 
-                title="Link to learn you about multiline strings" target="_blank">How to use a multiline string with python?</a></li>
-        </ul>
+    <div class="container">
+            <img class="bzu" src="./bzu.png" alt="BZUlogo" width="110px">
+            <a href="main_ar.html" target="_blank"><button class="sub">Arabic</button></a>
+            <a class="sub" href="https://www.w3schools.com/python/gloss_python_multi_line_strings.asp" 
+                title="Link to learn you about multiline strings" target="_blank"><button class="sub">QQQQQ</button></a>
     </div>
     <br><br>
-    <div class="desc"><p class="welcome">Welcome to our course <span class="CourseName">Computer Networks, This is a tiny Webserver </span> </p>
+    <div id="logi">
+        <p class="welcome">Welcome to our course <span class="CourseName">Computer Networks, This is a tiny Webserver </span> </p>
     </div>
-    <br>
-    <br><br>
-    <br>
-    <dl class="Names">
-        <dt class="ourTeam">Group members</dt>
-        <dd class="Gnames"><span class="hanna">Hanna Abudayeh-1200085</span><br> <span class="eyas">Eyass Mahsaqi-1200640</span>
-            <br><span class="yousef">Yousef Isaifan-1193102</span></dd>
+
+    <br><br><br>
+    <dl id="logi">
+        <dt>Group members</dt>
+        <dd><span>Hanna Abudayeh-1200085</span><br> <span>Eyass Mahsaqi-1200640</span> <br><span>Yousef Isaifan-1193102</span></dd>
     </dl>
     <br><br><br><br><br><br>
 </div>
@@ -176,6 +171,6 @@
             </Table>
     </div>
 </div>
-<br><br><br><br><br>
+
 </body>
 </html>

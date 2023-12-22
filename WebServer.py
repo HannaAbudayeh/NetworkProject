@@ -2,7 +2,7 @@ from socket import *
 
 Websock = socket(AF_INET, SOCK_STREAM)
 # Declare host name and its port
-HOST_NAME = '192.168.1.2'
+HOST_NAME = "192.168.1.108"
 HOST_PORT = 9977
 
 Websock.bind((HOST_NAME, HOST_PORT))
@@ -16,29 +16,29 @@ while True:
     ip = addr[0]
     port = addr[1]
     print(sentence)
-    method, path, version = sentence.split(" ")[0:3]
+    method, path, version = sentence.split()[0:3]
 
     if method == "GET":
-        # English page
-        if path in ["/", "/en", "/index.html", "/main_en.html", "/.html"]:
+        # صفحة الانجليزي
+        if path in ["/","/en","/index.html","/main_en.html","/.html"]:
             conn.send("HTTP/1.1 200 OK\r\n".encode())
             conn.send("Content-Type: text/html\r\n".encode())
             conn.send("\r\n".encode())
-            f1 = open("main_en.html", "rb")
+            f1 = open("main_en.html","rb")
             conn.send(f1.read())
             f1.close()
 
-        #Arabic page
+        #صفحة العربية
         elif path in ["/ar", "/main_ar.html"]:
             conn.send("HTTP/1.1 200 OK\r\n".encode())
             conn.send("Content-Type: text/html\r\n".encode())
             conn.send("charset: utf-8\r\n".encode())
             conn.send("\r\n".encode())
-            f1 = open("main_ar.html", "rb")
+            f1 = open("main_ar.html","rb")
             conn.send(f1.read())
             f1.close()
 
-        #css file
+        #css file 
         elif path == "/.css":
             conn.send("HTTP/1.1 200 OK\r\n".encode())
             conn.send("Content-Type: text/css\r\n".encode())
@@ -57,7 +57,7 @@ while True:
             conn.send("HTTP/1.1 200 OK\r\n".encode())
             conn.send("Content-Type: image/jpg\r\n".encode())
             conn.send("\r\n".encode())
-            f1 = open("Fordesc.jpg", "rb")
+            f1 = open("wallpaper.jpg", "rb")
             conn.send(f1.read())
         #To get the style of English page
         elif path == "/main_en.css":
@@ -65,15 +65,6 @@ while True:
             conn.send("Content-Type: text/css\r\n".encode())
             conn.send("\r\n".encode())
             f1 = open("main_en.css", "rb")
-            conn.send(f1.read())
-            f1.close()
-
-        #To get the background of English & Arabic pages
-        elif path == "/Fordesc.jpg":
-            conn.send("HTTP/1.1 200 OK\r\n".encode())
-            conn.send("Content-Type: image/jpg\r\n".encode())
-            conn.send("\r\n".encode())
-            f1 = open("Fordesc.jpg", "rb")
             conn.send(f1.read())
             f1.close()
 
@@ -93,9 +84,9 @@ while True:
             conn.send(f1.read())
             f1.close()
 
-        elif path == "/yt":
+        elif path == "/cr":
             conn.send("HTTP/1.1 307 Temporary Redirect\r\n".encode())
-            conn.send("Location: https://youtube.com/\r\n".encode())
+            conn.send("Location: https://cornell.edu/\r\n".encode())
             conn.send("\r\n".encode())
         elif path == "/so":
             conn.send("HTTP/1.1 307 Temporary Redirect\r\n".encode())

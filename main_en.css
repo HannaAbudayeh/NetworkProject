@@ -146,13 +146,12 @@ li {
     line-height: 50px;
     cursor: default;
     background-color: rgb(212, 212, 212);
-    width: 65%;
+    width: 40%;
     overflow: auto;
     border-width: 5px;
     border-color: rgba(175, 6, 6, 0.473);
-    border-style: double none double none;
+    border-style: double;
     border-radius: 15px;
-    border-radius: 15px 120px;
     margin: 15px 0 0 30px;
 }
 
@@ -180,7 +179,7 @@ li {
     border-width: 2px;
     border-color: black;
     border-style: double;
-    width: 33%;
+    width: 70%;
     margin: auto;
     transition: background-color 0.75s;
 }
